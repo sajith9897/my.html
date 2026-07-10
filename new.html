@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Podcast Series</title>
+    <style>
+        /* Optional basic styling to position the aside layout */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        main {
+            flex: 2;
+            min-width: 300px;
+        }
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        video, iframe, audio {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section: Contains title and description -->
+    <header>
+        <h1>Welcome to the VoiceBox Podcast</h1>
+        <p>Your ultimate beginner's guide to understanding the world of digital storytelling, audio production, and content creation.</p>
+        <hr>
+    </header>
+
+    <!-- Layout Wrapper to separate Main Content and Sidebar -->
+    <div class="container">
+        
+        <!-- Main Content Section -->
+        <main>
+            <section>
+                <h2>Host's Welcome Video</h2>
+                <!-- Embedded YouTube Video Placeholder -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h2>Listen to Episode 1: The Beginning</h2>
+                <!-- Audio Player for the first episode -->
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+
+            <section>
+                <h2>Data and Content Storage Note</h2>
+                <!-- Placeholder paragraph mentioning storage -->
+                <p>All our podcast audio files, video content, and metadata are securely stored using cloud-based object storage solutions. This ensures high availability, reliable backups, and fast streaming speeds for our listeners across the globe.</p>
+            </section>
+        </main>
+
+        <!-- Sidebar Section: Host Profile using <aside> -->
+        <aside>
+            <h2>Meet the Host</h2>
+            <!-- Figure tag with host image and caption -->
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Host Profile Picture">
+                <figcaption>Alex Mercer - Creator & Host of VoiceBox</figcaption>
+            </figure>
+            <p>Alex is a seasoned audio engineer and digital media creator with over five years of industry experience, passionate about helping beginners get started.</p>
+        </aside>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 VoiceBox Podcast Series. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
