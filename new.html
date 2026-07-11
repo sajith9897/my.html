@@ -3,89 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner Podcast Series</title>
+    <title>Media Gallery</title>
     <style>
-        /* Optional basic styling to position the aside layout */
+        /* Basic styling for presentation purposes */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
         }
         main {
-            flex: 2;
-            min-width: 300px;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
-        aside {
-            flex: 1;
-            min-width: 250px;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
+        section {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        video, iframe, audio {
-            max-width: 100%;
-            margin-bottom: 15px;
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 0.5rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        audio {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section: Contains title and description -->
+    <!-- Semantic Header Element -->
     <header>
-        <h1>Welcome to the VoiceBox Podcast</h1>
-        <p>Your ultimate beginner's guide to understanding the world of digital storytelling, audio production, and content creation.</p>
-        <hr>
+        <h1>My Media Gallery</h1>
     </header>
 
-    <!-- Layout Wrapper to separate Main Content and Sidebar -->
-    <div class="container">
-        
-        <!-- Main Content Section -->
-        <main>
-            <section>
-                <h2>Host's Welcome Video</h2>
-                <!-- Embedded YouTube Video Placeholder -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
+    <!-- Semantic Main Content Element -->
+    <main>
 
-            <section>
-                <h2>Listen to Episode 1: The Beginning</h2>
-                <!-- Audio Player for the first episode -->
-                <audio controls>
-                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </section>
+        <!-- Video Section -->
+        <section id="video-gallery">
+            <h2>Featured Video</h2>
+            <div class="video-container">
+                <!-- Embedded YouTube Video using iframe -->
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
-            <section>
-                <h2>Data and Content Storage Note</h2>
-                <!-- Placeholder paragraph mentioning storage -->
-                <p>All our podcast audio files, video content, and metadata are securely stored using cloud-based object storage solutions. This ensures high availability, reliable backups, and fast streaming speeds for our listeners across the globe.</p>
-            </section>
-        </main>
+        <!-- Audio Section -->
+        <section id="audio-gallery">
+            <h2>Featured Audio</h2>
+            <p>Listen to our featured track below:</p>
+            <!-- Audio Player using audio tag -->
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-        <!-- Sidebar Section: Host Profile using <aside> -->
-        <aside>
-            <h2>Meet the Host</h2>
-            <!-- Figure tag with host image and caption -->
-            <figure>
-                <img src="https://via.placeholder.com/150" alt="Host Profile Picture">
-                <figcaption>Alex Mercer - Creator & Host of VoiceBox</figcaption>
-            </figure>
-            <p>Alex is a seasoned audio engineer and digital media creator with over five years of industry experience, passionate about helping beginners get started.</p>
-        </aside>
+    </main>
 
-    </div>
-
-    <!-- Footer Section -->
+    <!-- Semantic Footer Element -->
     <footer>
-        <hr>
-        <p>&copy; 2026 VoiceBox Podcast Series. All rights reserved.</p>
+        <p>&copy; 2026 Media Gallery Project. All rights reserved.</p>
     </footer>
 
 </body>
