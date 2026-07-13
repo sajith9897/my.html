@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD News | Contact US</title>
+</head>
+<body>
+    
+    <!-- Heading & navigation links -->
+    <header>
+        <h1><a href="abcdnews.html" style="color:black; text-decoration: none;">ABCD News</a></h1>
+        <nav>
+            <a href="abcdnews.html" style="color: brown;">Home</a>
+            <a href="about.html" style="color: brown;"> About</a>
+
+        </nav>
+        <hr>
+
+        <h1><span style="color: red;">CONTACT US</span> </h1>
+    </header>
+
+    <!-- Main section -->
+    <form action="" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="eg: Adarsh. S" required><br>
+        <br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" name="mobile" id="mobile" maxlength="10" placeholder="1234567890" required><br>
+        <br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="yourmail@gmail.com"><br>
+        <br>
+        <label for="communication">Type of communication:</label><br>
+        <select name="communication" id="communication">
+            <option value="select">--select--</option>
+            <option value="sales">Sales</option>
+            <option value="service">Service</option>
+            <option value="enquiry">Enquiry</option>
+            <option value="advertisement">Adeversement</option>
+            <option value="complaint">Complaint</option>
+        </select><br>
+        <br>
+
+        <label for="description">Description:</label><br>
+        <textarea name="description" id="description" rows="7" cols="100" maxlength="500" placeholder="Type your description here..."></textarea><br>
+        <input type="submit" value="Submit">
+    </form> 
+</body>
+</html>
