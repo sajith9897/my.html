@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_largest number</title>
+</head>
+<body>
+    <h1>Find the greatest number</h1>
+
+    <label for="num1">Enter the first number:</label><br>
+    <input type="number" id="num1"><br>
+    <br>
+
+    <label for="num2">Enter the second number:</label><br>
+    <input type="number" id="num2"><br>
+    <br>
+    <button onclick="findGreatest()">Submit</button><br>
+    <br>
+
+    <p id="result"></p>
+
+    <script>
+        function findGreatest(){
+            let num1=Number (document.getElementById("num1").value);
+            let num2=Number (document.getElementById("num2").value);
+
+            if (num1>num2){document.getElementById("result").innerHTML = "The greatest number is:" + num1}
+            else if (num2>num1) {document.getElementById("result").innerHTML = "The greatest number is:" + num2}
+        }
+    </script>
+</body>
+</html>
